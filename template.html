@@ -18,11 +18,34 @@
 	<!-- CSS Files -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/material-kit.css" rel="stylesheet"/>
+    
+    <link rel = "stylesheet"
+   type = "text/css"
+   href = "mystyle.css" />
+   
 </head>
 
 <body>
 
 <!-- Navbar will come here -->
+
+<!-- Navbar -->
+<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+		<div class="container">
+			<div class="navbar-header">
+					<div class="logo-container">
+						<div class="logo">
+							<img src="assets/img/logo.png" width=200 height=200 alt="Creative Tim Logo" rel="tooltip" title="nerds" data-placement="bottom" data-html="true">
+						</div>
+						<div class="brand">
+							<h3><big>Picking Phase</big></h3>
+						</div>
+
+
+					</div>
+			</div>
+		</div>	
+</nav>
 
 <!-- end navbar -->
 
@@ -35,10 +58,72 @@
 		<div class="container">
 
 			<!-- here you can add your content -->
-			
-		</div>
-	</div>
-</div>
+			<div class="tbg">
+				  <div class="tbgwrap">
+					<div class="tphoto">
+					  <img src="assets/img/logo.png" title="tphoto" alt="Tinder Photo" />
+					  <div class="tname">S <span class="age">ausage</span></div>
+					  <div class="tinfo"><i class="fa fa-book" aria-hidden="true"> 0</i><i class="fa fa-users" aria-hidden="true"> 0</i></div>
+					</div>
+					<div class="tcontrols">
+					  <div class="tno"><i class="fa fa-times" aria-hidden="true"></i></div>
+					  <div class="ti"><i class="fa fa-info" aria-hidden="true"></i></div>
+					  <div class="tyes"><i class="fa fa-heart" aria-hidden="true"></i></div>
+					</div>
+				  </div>
+				  <div class="credit"><a href="http://themakery.jcink.net">Created by Stog</a></div>
+				</div>
+				
+				<div id="checkRadios">
+				    <div class="row">
+		                <div class="col-sm-3">
+		                    <div class="title">
+		                        <h3>Allergies</h3>
+		                    </div>
+
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" name="optionsCheckboxes">
+									Weebs
+								</label>
+							</div>
+
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" name="optionsCheckboxes">
+									Ethan
+								</label>
+							</div>
+
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" name="optionsCheckboxes">
+									Pinneapple
+								</label>
+							</div>
+
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" name="optionsCheckboxes">
+									EVW Tests
+								</label>
+							</div>
+
+		                </div>
+	              </div>
+	           </div>
+	       </div>
+	       
+	       <!-- https://codepen.io/CrocoDillon/pen/GJclb?q=feedback&limit=all&type=type-pens  -->
+	       <section id="contact-form">
+			  <h2>Feedback</h2>
+			  <form id="contact" name="contact" accept-charset="utf-8">
+				<label><span>Name</span><input name="name" type="text" placeholder="Name"/></label>
+				<label><span>Email</span><input name="email" type="email" placeholder="Email"/></label>
+				<label><span>Message</span><textarea name="message" placeholder="Message"></textarea></label>
+				<input name="submit" type="submit" value="Send"/>
+			  </form>
+			</section>
 
 
 </body>
