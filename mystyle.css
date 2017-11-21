@@ -1,6 +1,14 @@
-.container { 
-margin: 0 auto;
-background-color: #6441a5;
+.container {
+    margin: 0 auto;
+    background-color: #6441a5;
+}
+
+.navbar-header {
+    text-align: center;
+}
+
+.header-offset {
+    height: 65.7667px;
 }
 
 .tbg {
@@ -8,8 +16,8 @@ background-color: #6441a5;
     width: 400px;
     background-color: #fff;
     margin: 0 auto;
-    
 }
+
 .tbgwrap { padding: 10px; }
 .theader { height: 65px; border-bottom: 1px solid #c0c0c0; }
 .theader i.fa-comments {
@@ -96,11 +104,13 @@ background-color: #6441a5;
     top: 30px;
     border: 10px solid #f0f0f0;
 }
+
 .ti .fa-info {
     font-size: 23px;
     padding: 15px 20px;
     color: #FFFFFF;
 }
+
 .tyes {
     background-color: #fff;
     height: 120px;
