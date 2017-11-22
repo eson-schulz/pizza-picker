@@ -1,7 +1,12 @@
 .container {
     margin: 0 auto;
-    background-color: #6441a5;
+    
 }
+.body { 
+	background-color: #6441a5;
+}
+
+
 
 .navbar-header {
     text-align: center;
@@ -12,14 +17,14 @@
 }
 
 .tbg {
-    height: 720px;
+    height: 550px;
     width: 400px;
     background-color: #fff;
     margin: 0 auto;
 }
 
 .tbgwrap { padding: 10px; }
-.theader { height: 65px; border-bottom: 1px solid #c0c0c0; }
+.theader { height: 65px; border-bottom: 1px solid #6441a5; }
 .theader i.fa-comments {
     color: #c0c0c0;
     font-size: 40px;
@@ -54,7 +59,8 @@
     background-color: #fff;
     box-shadow: 2px 2px 2px #c0c0c0;
 }
-.tphoto img {}
+.tphoto img {
+}
 .tname {
     padding: 15px;
     font-size: 20px;
@@ -83,7 +89,7 @@
     display: inline-block;
     top: 50px;
     left: 25px;
-    border: 10px solid #f0f0f0;
+    border: 3px solid #9c27b0;;
 }
 .tno i {
     color: #ff695b;
@@ -102,7 +108,7 @@
     display: inline-block;
     left: 12px;
     top: 30px;
-    border: 10px solid #f0f0f0;
+    border: 3px solid #;
 }
 
 .ti .fa-info {
@@ -122,8 +128,8 @@
     position: relative;
     display: inline-block;
     top: 48px;
-    left: 0px;
-    border: 10px solid #f0f0f0;
+    left: 100px;
+    border: 3px solid #9c27b0;
 }
 .tyes i {
     color: #5de19c;
@@ -190,17 +196,17 @@ input[type="text"], input[type="email"], textarea {
   outline: none;
 }
 input.invalid, textarea.invalid {
-  border-color: #d5144d;
+  border-color: #9c27b0;;;
 }
 textarea {
   height: 6em;
 }
 input[type="submit"], button {
-  background: #a7cd80;
+  background: #9c27b0;
   color: #333;
 }
 input[type="submit"]:hover, button:hover {
-  background: #91b36f;
+  background: #9c27;;
 }
 @media screen and (min-width: 30em) {
   #contact-form h2 {
