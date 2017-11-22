@@ -21,7 +21,11 @@ max-width: = 100%;
 
 .navbar-header {
     text-align: center;
-    padding-left:5em
+    /*padding-left:5em*/
+}
+
+.brand {
+    margin: 0 auto;
 }
 
 .header-offset {
