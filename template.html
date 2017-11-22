@@ -48,14 +48,14 @@
 	  <div class="tbg">
 	    <div class="tbgwrap">
 	      <div class="tphoto">
-			 <img height=300 width=350 src="assets/img/logo.png" title="tphoto" alt="Tinder Photo"/> 
-		<div class="tname">Sausage</div>
+			 <img height=300 width=350 src="assets/img/logo.png" title="tphoto" alt="Tinder Photo" id="pizzaToppingImage"/> 
+		<div class="tname" id="pizzaToppingText">Sausage</div>
 		
 	      </div>
 	      <div class="tcontrols">
-		<div class="tno"><i class="fa fa-times" aria-hidden="true"></i></div>
+		<div class="tno" onclick="swipe('left')"><i class="fa fa-times" aria-hidden="true"></i></div>
 		
-		<div class="tyes"><i class="fa fa-heart" aria-hidden="true"></i></div>
+		<div class="tyes" onclick="swipe('right')"><i class="fa fa-heart" aria-hidden="true"></i></div>
 	      </div>
 	    </div>
 	  </div>
@@ -127,6 +127,54 @@
   <script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
 
   <!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
-  <script src="assets/js/material-kit.js" type="text/javascript"></script>
+	<script src="assets/js/material-kit.js" type="text/javascript"></script>
+	
+	<!-- Plug for Swiping -->
+	<script src="https://hammerjs.github.io/dist/hammer.min.js" type="text/javascript"></script>
+	<script src="https://hammerjs.github.io/dist/hammer-time.min.js" type="text/javascript"></script>
+
+	<script>
+		var pizza_topping_index = 0;
+		var pizza_topping_images = ["assets/img/toppings/green-pepper.jpg", 
+															"assets/img/toppings/pepperoni.jpg", 
+															"assets/img/toppings/pineapple.jpg"];
+		var pizza_topping_names = ["Green Peppers",
+															 "Pepperoni",
+															 "Pineapple"];
+
+		var myElement = document.getElementById('pizzaToppingImage');
+		var mc = new Hammer(myElement);
+		mc.on('swipe', function(ev) {
+			if (ev['velocityX'] > 0) {
+				swipe('right');
+			}
+			else {
+				swipe('left');
+			}
+		});
+
+		function swipe(event) {
+			// Update Image
+			pizza_topping_index += 1;
+			if (pizza_topping_index >= pizza_topping_images.length) {
+				pizza_topping_index = 0;
+			}
+			updatePizzaTopping();
+
+			if (event == 'right') {
+				console.log('Swipe Right');
+			}
+			else {
+				console.log('Swipe Left');
+			}
+		}
+
+		function updatePizzaTopping() {
+			document.getElementById("pizzaToppingImage").src = pizza_topping_images[pizza_topping_index];
+			document.getElementById("pizzaToppingText").innerHTML = pizza_topping_names[pizza_topping_index];
+		} 
+
+		updatePizzaTopping();
+	</script>
 
 </html>
