@@ -74,7 +74,7 @@
 											<tr id="tr-1">
 												<td>Michael Jones</td>
 												<td>michael@example.com</td>
-												<td>active</td>
+												<td>Active</td>
 												<td class="text-right">
 													<button class="button tiny" onclick="removeAdmin('tr-1');">Delete Admin</button>
 												</td>
@@ -82,7 +82,7 @@
 											<tr id="tr-2">
 												<td>Bob Smith</td>
 												<td>bob.smith@example.com</td>
-												<td>active</td>
+												<td>Active</td>
 												<td class="text-right">
 													<button class="button tiny" onclick="removeAdmin('tr-2');">Delete Admin</button>
 												</td>
@@ -187,7 +187,7 @@
 
 		var tr = document.createElement('tr');
 		tr.id = 'tr-' + count;
-		tr.innerHTML = "<td>" + firstNameField.value + "</td><td>" + emailField.value + "</td><td>active</td><td class='text-right'><button class='button tiny' onclick=\"removeAdmin('" + tr.id + "');\">Delete Admin</button></td>"
+		tr.innerHTML = "<td>" + firstNameField.value + "</td><td>" + emailField.value + "</td><td>Active</td><td class='text-right'><button class='button tiny' onclick=\"removeAdmin('" + tr.id + "');\">Delete Admin</button></td>"
 		table.appendChild(tr);
 
 		firstNameField.value = "";
