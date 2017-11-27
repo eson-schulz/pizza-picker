@@ -97,12 +97,11 @@
 	<!-- https://codepen.io/CrocoDillon/pen/GJclb?q=feedback&limit=all&type=type-pens  -->
 	<section id="contact-form">
 	  <h2>Feedback</h2>
-	  <form id="contact" name="contact" accept-charset="utf-8">
 	    <label><span>Name</span><input name="name" type="text" placeholder="Name"/></label>
 	    <label><span>Email</span><input name="email" type="email" placeholder="Email"/></label>
 	    <label><span>Message</span><textarea name="message" placeholder="Message"></textarea></label>
-	    <input class="btn btn-primary" name="submit" type="submit" value="Submit"/>
-	  </form>
+	    <input class="btn btn-primary" name="submit" type="submit" value="Submit" onclick="window.location='./index.html';"/>
+	 
 	</section>
 
 	<br/>
@@ -133,10 +132,12 @@
 		var pizza_topping_index = 0;
 		var pizza_topping_images = ["assets/img/toppings/green-pepper.jpg", 
 															"assets/img/toppings/pepperoni.jpg", 
-															"assets/img/toppings/pineapple.jpg"];
+															"assets/img/toppings/pineapple.jpg",
+															"assets/img/toppings/grey-x.png"];
 		var pizza_topping_names = ["Green Peppers",
 															 "Pepperoni",
-															 "Pineapple"];
+															 "Pineapple",
+															 "Complete"];
 
 		var myElement = document.getElementById('pizzaToppingImage');
 		var mc = new Hammer(myElement);
@@ -153,7 +154,8 @@
 			// Update Image
 			pizza_topping_index += 1;
 			if (pizza_topping_index >= pizza_topping_images.length) {
-				pizza_topping_index = 0;
+				return;
+				// pizza_topping_index = 0;
 			}
 			updatePizzaTopping();
 
